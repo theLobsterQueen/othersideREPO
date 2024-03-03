@@ -1,1 +1,115 @@
-					 General Design Document for Otherside
+							 General Design Document for Otherside
+
+Logline :
+	Task-based puzzle-platformer game using 3D graphics and a first person perspective
+		with a focus on emphasizing movement in its puzzles. Aestethically, it holds a light-hearted retro 
+		tone accented by monstrous entities augmented with various graphical effects to 
+		create mystique and terror.
+
+Design Pillars :
+	Fluid :
+		From movement transitions to UI elements, a primary focus of the game is to ensure that
+			animations mesh well and are not jarring to the eye. This gives the game a "polished"
+			feel and helps make the game feel more competent and complete as a whole.
+	
+	Visual :
+		The game's primary show of uniqueness is in how it represents the world around it by
+			the use of visual effects. Tools like dithering and aliasing/anti-aliasing are used
+			to describe texture, while the status of items or the nature of monsters may be
+			represented by more unconventional techniques, like pixel sorting. 
+
+	Simple :
+		The game's core loop is simple, dealing only with the core essentials of what it means
+			to be a video game. This means that the player is given a goal, the tools to achieve
+			that goal, and not much else: no side quests, no easter eggs, no non-essential content.
+			Failure to achieve this goal could prove fatal for completing the project on time.
+
+Core Gameplay Loop :
+	The player begins a round. They are given a list of tasks to complete before a time limit runs out.
+		These tasks are spread around the map which the player spawned in, and they must all
+		available tools at their disposal in order to successfuly complete their tasks.
+
+	As the player is completing tasks, more entities/obstacles spawn into the map, making the
+		player's objective increasingly more difficult to accomplish. Note that this is based on
+		how many tasks have been completed, NOT the time remaining in the round.
+
+	The player completes all of their tasks and is given a position. The player must be at that position
+		within a small amount of time, or they will not leave the map alive. While dying on the
+		way to evacuating does not mean they lost the round, it does decrease their score by a significant
+		percentage.
+
+	The player either wins, wins and fails to evacuate, or dies. They are then given their score.
+		(Time permitting, there may be an in-game global leaderboard for the player to compare
+		their scores against others.) The loop then begins again.
+
+Features :
+	Aberration :
+		The player is able to "aberrate" into an alternate dimension. In this dimension, the player
+			character's physical energy manifests as a demoness-like creature, with multiple arms
+			and unnatural mobility and strength. While in this alternate dimension, the screen
+			will be defiled with myriad amounts of sever filters, making playing primarily in this
+			mode nauseating and undesirable, but at the same time also very mesmerizing. Objects
+			of interest and entities will be highlighted, and the player will more "sense" where
+			to go by navigating towards these beacons, rather than trying to understand all of 
+			what they are seeing like they would in a normal first person game. 
+
+		While in this alternate dimension, the player character's increased strength and mobility
+			allows them to destroy certain barriers and cross certain gaps, which the player otherwise
+			would not be able to overcome. This makes the demoness powers useful for more than 
+			just bashing the occasional enemy: aberrating from the normal dimension to the
+			alternate dimension is a useful and commonly necesarry tool that the player must learn
+			to adapt to.
+
+	Tuck and Roll :
+		The player doesn't have any forms of offense outside of the demoness attack (which is geared
+			more towards destroying stationary objects, so it isn't the best for use in combat),
+			which means that the majority of the time the player will be avoiding, rather than
+			creating, damaging attacks. To help with this, the player has a swift dodge in the
+			normal dimension. The player cannot be damaged from projectils while in the dodge animation. 
+			However, if they collide with an enemy, they will take damage and be completely stationary
+			for an number of seconds.
+
+		While in the alternate dimension, the player can still dodge, but it is slightly different:
+			the player moves slightly slower AND, if they collide with an enemy, that enemy will
+			be damaged and immobilized instead of them. In the alternate dimension, the player
+			can also double jump and dash while in the air. While useful for dodging enemy attacks,
+			it can also be used for platforming.
+
+	Tasks :
+		The main objective (and also one of the major threats) for the player is the completion
+			of tasks. Tasks are placed about the map and function in the same way as tasks work in
+			Amogus; the screen is almost entirely occupied by the window which the task is in,
+			and the player must focus on completing the task as quickly as possible, because they
+			are still vulnerable to enemies while completing it. Notably, the player will ALWAYS
+			have to address tasks while in the normal dimension, meaning they do not benefit from
+			the abilities of the demoness powers during this critical period. 
+
+		As mentioned previously, whenever the player completes a task, the environment as a whole
+			becomes more dangerous. This is a critical aspect of the game, and helps give
+			each round a Helldivers-like pacing of increasingly frenetic action and rising stakes
+			as the player attempts to finish their mission.
+
+	Traps and the Environment :
+		Most maps are usually laden with difficult traps that the player must navigate through or
+			around. However, these traps can be activated to target enemies instead. This can be used
+			to give the player breathing room while they attempt complete a difficult task. However,
+			note that the traps take time and concetration to be rewired, just like the traps (the
+			demands on the player are just far lower.)
+
+		The environment also changes as the player completes tasks. Bridges may recede, doors may lock,
+			and turrets or traps will activate as the player continues, making the environment
+			more dangerous as the entities become more frantic.
+
+Narrative :
+	The setting of the game is a galactic "dark-age;" after science goes awry in a galactic research
+		station orbiting a black hole, a gravitational ripple of unmeasurable power rips apart all living
+		beings. Most are reduced to undead ghosts, caught between dimensions, terrorizing those who
+		remain. The ones who survived the wave, however, are now capable of aberrating between
+		the familiar dimension of physical existence and a nightmarish, hell-like realm where raw
+		energy and thought can manifest into reality.
+
+	These survivors are now scavengers, excavating old relics of ships long dead in order to secure
+		the resources they need to survive on the myriad colonies spread throughout the galaxy. The
+		player character is one of these innumerable scavengers, fighting desperately to scrap out
+		precious components and data in order to keep her small ship functioning, as the energies
+		permeating the long dead ships become increasingly aware of her presence.

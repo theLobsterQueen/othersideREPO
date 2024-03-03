@@ -1,0 +1,34 @@
+[PHASE 0: PROTOTYPING]
+	* Create FPS and movement system.
+	* Create aberration system.
+	* Create traps and environmental systems.
+	* Create tasks.
+	* Create enemies.
+
+	* Test, polish. 
+	(SHOULD BE DONE BY MARCH 5th)
+
+[PHASE 1: DEVELOPMENT]
+	* Create designs for models, ships, enemies, etc.
+	* Design traps and rewire operations.
+	* Design and implement UI assets.
+	* Model and apply them to the game.
+
+	(SHOULD BE DONE BY MARCH 10th)
+
+[PHASE 2: EFFECTS/POLISH]
+	* Create visual effects and finalize the aestethics of the game.
+	* Polish EVERYTHING.
+	* Test.
+	* Polish EVERYTHING. Again.
+
+	(SHOULD BE DONE BY MARCH 12th)
+
+[PHASE 3: TEST/BUILDING]
+	* Playtest the game a little more (shouldn't be much left by now.)
+	* Build it. Make sure it builds well.
+	(SHOULD BE DONE BY MARCH 13th)
+
+[PHASE 4: CATHARSIS]
+	* Enjoy sweet victory.
+

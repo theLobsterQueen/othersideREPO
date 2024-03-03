@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://j76x6loto1sb"]
+
+[node name="TestCamera" type="Camera3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, 0)
+
+[node name="TestCameraLight" type="SpotLight3D" parent="."]
+light_color = Color(0.294118, 0.635294, 0.984314, 1)
+light_energy = 16.0
+spot_range = 32.0
+spot_angle = 30.0
